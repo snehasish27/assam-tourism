@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+	<title>Assam Tourism</title>
+        <link rel="stylesheet" type="text/css" href="css/my_style.css">
+	<!--  -->
+
+	<style>
+        .notice a{color:#00838f}
+        a.list-group-item {
+    height:auto;
+    min-height:260px;
+}
+a.list-group-item.active small {
+    color:#fff;
+}
+                
+  </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+        <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                    </button> <a href="home.html" class="pull-left"><img class="nav-logo img-responsive" src="image/logo.png" width="120px" height="100px"></a>
+	</div>
+        
+     <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <li><a href="home.html">Home</a></li>
+        <li class="active"><a href="#"><b>Destination</b></a></li>
+        <li><a href="accomodation.html">Accomodation</a></li>
+        <li><a href="touroperators.html">Tour operators</a></li>
+      </ul>
+            <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span></span><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Login/SignUp</button></a></li>
+      </ul>
+    </div>
+        </div>
+    </nav>
+    
+     <!-- login -->
+    
+    <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="container">
+    	<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-login">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-6">
+								<a href="#" class="active" id="login-form-link">Login</a>
+							</div>
+							<div class="col-xs-6">
+								<a href="#" id="register-form-link">Register</a>
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12">
+								<form id="login-form" action="login.php" method="post" role="form" style="display: block;" onsubmit="return validateForm()" name="loginform">
+									<div class="form-group">
+										<input type="text" name="username" id="username" required tabindex="1" class="form-control" placeholder="Username" value="">
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" required tabindex="2" class="form-control" placeholder="Password">
+									</div>
+									<div class="form-group text-center">
+										<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+										<label for="remember"> Remember Me</label>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+											</div>
+										</div>
+									</div>
+									
+								</form>
+								<form id="register-form" action="reg.php" method="post" role="form" style="display: none;" name="reg">
+                                    <div class="form-group">
+										<input type="text" name="name" id="name" required tabindex="1" class="form-control" placeholder="name" value="">
+									</div>
+									<div class="form-group">
+										<input type="text" name="username" id="username" required  tabindex="1" class="form-control" placeholder="Username" value="">
+									</div>
+									<div class="form-group">
+										<input type="email" name="email" id="email" required  tabindex="1" class="form-control" placeholder="Email Address" value="">
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" required  tabindex="2" class="form-control" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<input type="password" name="confirm-password" required id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+    
+    <!--End login-->
+    <div id=data><br></div>
+    <!-- THe sliding window+nav Bar-->
+
+    <div id=data><br></div>
+    
+
+    <!-- THe content-->
+    
+	<div class="container stars">
+        
+    <div class="row">
+		<div class="well back">
+            <div class="panel price panel-second shadow1">
+						<div class="panel-heading arrow_box text-center tex" id="heading">
+                            <h3><i class="fa fa-map-marker fa-2x" > Favourite Destination of ASSAM</i></h3>
+                        
+						</div>
+            </div>
+        
+        <div class="list-group">
+          <a href="#" class="list-group-item">
+                <div class="media col-md-4">
+                    <figure class="pull-left">
+                        <img class="media-object img-rounded img-responsive"  src="image/wild.jpg" width="350" height="250" alt="placehold.it/350x250" >
+                    </figure>
+                </div>
+                <div class="col-md-8">
+                    <h4 class="list-group-item-heading"> WILDLIFE </h4>
+                    <p class="list-group-item-text"> 	
+With five national parks, two of which are designated World Natural Heritage Sites by UNESCO, and several wildlfe and bird sanctuaries, Assam is a blessed land for wildlife enthusiasts.At the heart of it's mind boggling biodiveristy is the rich topography of Assam with it's lush hills and valleys dissected by the majestic Brahmaputra and it's many tributaries.
+Assam is home to over 180 species of mammals, including rare and endangered species like the great Indian one-horned rhinoceros, the royal Bengal tiger, the golden langur and hoolock gibbon, and a spectacular range of avifauna.
+Assam's most famous parks are Kaziranga and Manas. Both were conferred World Heritage Status in 1985.
+                    </p>
+                </div>
+               
+          </a>
+          <a href="#" class="list-group-item">
+                <div class="media col-md-4">
+                    <figure class="pull-left">
+                        <img class="media-object img-rounded img-responsive" src="image/adv.jpg" width="350" height="250" alt="placehold.it/350x250" >
+                    </figure>
+                </div>
+                <div class="col-md-8">
+                    <h4 class="list-group-item-heading"> ADVENTURE </h4>
+                    <p class="list-group-item-text"> 	
+A Tough terrain had protected Assam from invaders in the past. Today, it has made the state an incomparable outbound destination.
+
+Since the late 1960s, diehard adventurers and explorers in Assam have streamlined the activities to produce mountaineers, rockclimbers, trekkers, cavers, hang-gliders and rafters. The state’s tallest peak Hempieupit is perfect for trekking. Guwahati too offers some exciting trekking routes and rock-climbing spots. A network of rivers, rivulets and mountain streams make the region ideal for white water rafting, canoeing, kayaking and other water sports.
+
+ 	
+Adventure across the Northeast is incomplete without trekking through the deep forests, the thickest in India. Hiking through the famed Kaziranga, Manas and Dibru-Saikhowa national parks can be an unforgettable experience. One can add Meghalaya’s mysterious stalactite and stalagmite caves to the itinerary.</p>
+                </div>
+            </a>
+          <a href="#" class="list-group-item">
+                <div class="media col-md-4">
+                    <figure class="pull-left">
+                        <img class="media-object img-rounded img-responsive" src="image/tea.jpg" width="350" height="250" alt="placehold.it/350x250">
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="list-group-item-heading"> TEA AND GOLF </h4>
+                    <p class="list-group-item-text">	
+Assam has been synonymous with tea ever since Briton Robert Bruce claimed to have discovered it in 1823, though the Singpho tribal people living in areas straddling Assam and Arunachal Pradesh cultivated and drank tea as a herbal rejuvenator for ages.
+
+With more than 800 major and 60,000 small estates spread across 300,000 hectares, Assam has the world’s largest concentration of tea plantations and employs 17% of the State’s workforce. Assam tea accounts for 55% of India’s total tea production and 80% of the country’s export.
+                    </p>
+                </div>
+                
+          </a>
+            <a href="#" class="list-group-item">
+                <div class="media col-md-4">
+                    <figure class="pull-left">
+                        <img class="media-object img-rounded img-responsive" src="image/holy.jpg" width="350" height="250" alt="placehold.it/350x250">
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="list-group-item-heading">  TEMPLES AND PILGREMS </h4>
+                    <p class="list-group-item-text"> Nestled in the Brahmaputra valley this state has Tantrik Shaktism, Shivaism and later Vaishnavism flourishing in its laps. From time to time people from different races, religion and culture have migrated to this place.
+
+The Mohmmedan invasions brought Islam into the state. Sikhism flourished here, Buddhist communities have kept the flag of Buddhism flying high. The famous Gurudwara at Dhubri established by the ninth Sikh Guru Teg Bahadur is held in the high veneration by the sikhs throughout the country.
+With the advent of new faith and religion many temples and monuments were built all over Assam. Most of these architectural graduers belong to the medieval period and represent the architectural style of the Koch, Kachari and Ahom royal courts. 
+                    </p>
+                </div>
+                
+          </a>
+        </div>
+        </div>
+	</div>
+</div>
+				
+        
+        	    
+
+        <!--the footer-->
+        
+   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer" id="main_f">
+<div class="container text-center">
+    <hr>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-4">
+	  <h3>Contact Us</h3>
+        <ul class="nav nav-pills nav-stacked">
+		  <li><a href="#"><i class="fa fa-envelope fa-2x"></i>  assamtourism@gov.in</a></li>
+          <li><a href="#"><i class="fa fa-phone fa-2x"></i> 9037624351,8904321621</a></li>
+          <li><a href="#"><i class="fa fa-map-marker fa-2x"></i> Guwahati,Assam-781029,India</a></li>
+		  
+        </ul>
+      </div>
+      
+      <div class="col-md-4">
+        <ul class="nav nav-pills nav-stacked">
+		<h3>About Assam Tourism</h3>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">About Assam</a></li>
+		  <li><a href="#">Facilities</a></li>
+		  
+        </ul>
+      </div>
+      <div class="col-md-4">
+		<ul class="nav nav-pills nav-stacked">
+		<h3>Follow Us</h3>
+		  <li class="facebook"><a href="http://facebook.com"><i class="fa fa-facebook fa-2x"></i> Facebook</a></li>
+		  <li class="twitter"><a href="http://twitter.com"><i class="fa fa-twitter fa-2x"></i> Twitter</a></li>
+		  <li class="behance"><a href="https://www.instagram.com"><i class="fa fa-instagram fa-2x"></i>Instagram</a></li>
+		</ul>
+      </div>  
+    </div>
+  </div>
+  <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="#">&copy 2015 Assam Tourism</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+    
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script>
+         $(function() {
+
+    $('#login-form-link').click(function(e) {
+		$("#login-form").delay(100).fadeIn(100);
+ 		$("#register-form").fadeOut(100);
+		$('#register-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+	});
+	$('#register-form-link').click(function(e) {
+		$("#register-form").delay(100).fadeIn(100);
+ 		$("#login-form").fadeOut(100);
+		$('#login-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+	});
+
+});
+	</script>
+
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+        .top-margin{
+            padding-top:45px;
+        }
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    #main_f{
+      background-color: #191818;
+      color: white;
+      padding: 15px;
+    }
+        footer{
+            background-color: aliceblue;
+        }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:500px;} 
+    }
+        .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:100px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+        #data{
+            background-color:#f1f1f1;
+        }
+        #heading{
+            background-color:#191818;
+            color: white;
+            border-bottom:solid black 2px;
+        }
+        .shadow{
+            box-shadow: 10px 10px 2px #c9c3c3;
+        }
+        .notice{
+            padding:5px;
+            background-color:#fafafa;
+            border-left:6px solid #7f7f84;
+            margin-bottom:5px;
+            -webkit-box-shadow:0 5px 8px -6px rgba(0,0,0,0.2);
+            -moz-box-shadow:0 5px 8px -6px rgba(0,0,0,0.2);
+            box-shadow:0 5px 8px -6px rgba(0,0,0,0.2)
+        }
+.notice-sm{padding:10px;font-size:80%}
+        .notice-lg{padding:35px;font-size:large}
+        .notice-success{border-color:#80D651}
+        .notice-success>strong{color:#80D651}
+        .notice-info{border-color:#45ABCD}
+        .notice-info>strong{color:#45ABCD}
+        .notice-warning{border-color:#FEAF20}
+        .notice-warning>strong{color:#FEAF20}
+        .notice-danger{border-color:#d73814}
+        .whyus_icon{color:white;text-align:center;width:130px;height:130px;background:#00897B;border-radius:50%;margin:0 auto}
+        .whyus_icon span{font-size:70px;height:100%;line-height:130px;width:100%;
+            -webkit-transition:all 0.5s;-o-transition:all 0.5s;transition:all 0.5s}
+        .single_whyus_top:hover .whyus_icon span{transform:scale(0.9)}
+        .single_whyus_top>h3{font-size:18px;font-weight:bold;text-align:center}
+        .single_whyus_top>p{font-size:14px;text-align:center}
+        .circle{
+            display:block;
+            width:250px;
+            height:250px;
+            margin:1em auto;
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position:center center;
+            -webkit-border-radius:99em;
+            -moz-border-radius:99em;
+            border-radius:99em;
+            border:5px solid #eee;
+            box-shadow:0 3px 2px rgba(0,0,0,0.3);
+            -webkit-transition:all 0.5s;-o-transition:all 0.5s;transition:all 0.5s;
+}
+.circle:hover 
+                .circle span{transform:scale(0.9)}}
+.aa{
+     font-size: 23px;
+     padding: 100px;
+     background-color:azure;
+    margin-bottom: 10px;
+     
+    
+}
+.aa1{
+    margin-top:11px;
+}
+
+.stars {
+    margin:20px auto 1px;    
+}
+.tex{
+    font-style:normal;
+    font-size: 48px;
+    text-shadow: 2px 2px #71c9a1;
+    
+}
+.back{
+   
+    background-color: #9ee39e;
+    
+}
+.why{
+    height: 300px;
+}
+.shadow1{
+            box-shadow: 10px 10px 2px #109d5c;
+        }
+.shadow2{
+            box-shadow: 10px 10px 2px #45ABCD;
+        }
+.shadow3{
+            box-shadow: 10px 10px 2px rgba(175, 117, 10, 0.72);
+        }
+.back1{
+   
+    background-color: #cdebf5;
+}
+.box{
+          display:block;
+            width:1100px;
+            height:400px;
+            margin:1em auto;
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-position:center center;
+            -webkit-border-radius:1em;
+            -moz-border-radius:1em;
+            border-radius:1em;
+            border:5px solid #000000;
+}
+.op{
+    height: 400px;
+}
+.tp{
+   
+    background-color: rgba(207, 214, 117, 0.28);
+}
+.tex1{
+    font-style:normal;
+    font-size: 48px;
+    text-shadow: 2px 2px #FEAF20;
+    
+}
+.tex2{
+    font-style:normal;
+    font-size: 48px;
+    text-shadow: 2px 2px #45ABCD;
+    
+}
+.bt{
+    height: 15px;
+}
+body {
+    padding-top: 90px;
+}
+.panel-login {
+	border-color: #ccc;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
+}
+.panel-login>.panel-heading {
+	color: #00415d;
+	background-color: #fff;
+	border-color: #fff;
+	text-align:center;
+}
+.panel-login>.panel-heading a{
+	text-decoration: none;
+	color: #666;
+	font-weight: bold;
+	font-size: 15px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login>.panel-heading a.active{
+	color: #029f5b;
+	font-size: 18px;
+}
+.panel-login>.panel-heading hr{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	clear: both;
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+	background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+.panel-login input[type="text"],.panel-login input[type="email"],.panel-login input[type="password"] {
+	height: 45px;
+	border: 1px solid #ddd;
+	font-size: 16px;
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.panel-login input:hover,
+.panel-login input:focus {
+	outline:none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-color: #ccc;
+}
+.btn-login {
+	background-color: #59B2E0;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #59B2E6;
+}
+.btn-login:hover,
+.btn-login:focus {
+	color: #fff;
+	background-color: #53A3CD;
+	border-color: #53A3CD;
+}
+.forgot-password {
+	text-decoration: underline;
+	color: #888;
+}
+.forgot-password:hover,
+.forgot-password:focus {
+	text-decoration: underline;
+	color: #666;
+}
+
+.btn-register {
+	background-color: #1CB94E;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #1CB94A;
+}
+.btn-register:hover,
+.btn-register:focus {
+	color: #fff;
+	background-color: #1CA347;
+	border-color: #1CA347;
+}
+    
+    
+
+   

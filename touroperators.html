@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+	<title>Assam Tourism</title>
+        <link rel="stylesheet" type="text/css" href="css/my_style.css">
+	<!--  -->
+
+	<style>
+        .notice a{color:#00838f}
+        a.list-group-item {
+    height:auto;
+    min-height:260px;
+}
+a.list-group-item.active small {
+    color:#fff;
+}
+                
+  </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+        <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                    </button> <a href="home.html" class="pull-left"><img class="nav-logo img-responsive" src="image/logo.png" width="120px" height="100px"></a>
+	</div>
+        
+     <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <li><a href="home.html">Home</a></li>
+        <li ><a href="destination.html">Destination</a></li>
+        <li><a href="accomodation.html">Accomodation</a></li>
+        <li class="active"><a href="#"><b>Tour operators</b></a></li>
+      </ul>
+  <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span></span><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Login/SignUp</button></a></li>
+      </ul>
+    </div>
+        </div>
+    </nav>
+     <!-- login -->
+    
+    <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="container">
+    	<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-login">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-6">
+								<a href="#" class="active" id="login-form-link">Login</a>
+							</div>
+							<div class="col-xs-6">
+								<a href="#" id="register-form-link">Register</a>
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12">
+								<form id="login-form" action="login.php" method="post" role="form" style="display: block;" onsubmit="return validateForm()" name="loginform">
+									<div class="form-group">
+										<input type="text" name="username" id="username" required tabindex="1" class="form-control" placeholder="Username" value="">
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" required tabindex="2" class="form-control" placeholder="Password">
+									</div>
+									<div class="form-group text-center">
+										<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+										<label for="remember"> Remember Me</label>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+											</div>
+										</div>
+									</div>
+									
+								</form>
+								<form id="register-form" action="reg.php" method="post" role="form" style="display: none;" name="reg">
+                                    <div class="form-group">
+										<input type="text" name="name" id="name" required tabindex="1" class="form-control" placeholder="name" value="">
+									</div>
+									<div class="form-group">
+										<input type="text" name="username" id="username" required  tabindex="1" class="form-control" placeholder="Username" value="">
+									</div>
+									<div class="form-group">
+										<input type="email" name="email" id="email" required  tabindex="1" class="form-control" placeholder="Email Address" value="">
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" required  tabindex="2" class="form-control" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<input type="password" name="confirm-password" required id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+    
+    <!--End login-->
+    <div id=data><br></div>
+    <!-- THe sliding window+nav Bar-->
+
+    <div id=data><br></div>
+    
+
+    <!-- THe content-->
+    
+	<div class="container stars">
+    <div class="row">
+		<div class="well tp">
+        <div class="panel price panel-first shadow3">
+						<div class="panel-heading arrow_box text-center tex1" id="heading">
+                            <h3><i class="fa fa-rocket fa-2x" >   TOUR OPEATOR</i></h3>
+                        
+						</div>
+            </div>
+
+            <img src="image/tour.jpg" class="box" >
+          
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 well tp text-center op">
+            	
+<b>Landscape Safari</b>
+            <br>
+6, Anil Niloy, 2nd Floor,
+Dr. B.K.Kakoti Road, Ulubari, Guwahati - 781007
+Assam ( India)
+Email: info@landscapesafari.com
+Website: www.landscapesafari.com
+Contact No: 0361 - 2464663/64/65
+            <br>
+
+<b>Kaziranga Holidays</b>
+            <br>
+Mr. Rajkumar Das 190, Savitri Villa, 2nd Floor, Near Voltas Building, M.D.Road, 
+Chandmari Guwahati - 781 003, 
+Assam 
+Email: info@kazirangaholidays.com
+Website: www.kazirangaholidays.com
+Contact No: +91-361-2664444
+<br>
+<b>Brahmaputra Cruise</b>
+            <br>
+Mr. Hemanta Doley 289, Maa Padma Commercial Complex A. T. Road. Bharalumukh, 
+Guwahati, Assam,
+Email:info@brahmaputrarivercruises.com
+www.brahmaputrarivercruises.com
+Contact No: +91-94355-58005
+            <br>
+          
+        </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 well  tp text-center op">
+            	
+<b>Koyeli Tours and Travels</b>
+                <br>
+Mr. Arijit Purkayastha Janambhumi Building, 151-R.G. Baruah Road,
+Guwahati - 781005 Assam 
+Email: www.koyelitravels.in
+Website: koyelitravels.in
+Contact No: +91-361-2206666/6789
++91-99540-55553<br>
+
+<b>Flamingo Travels and Adventures (A) Pvt. Ltd.</b><br>
+Mr. Sanjiv Gogoi Kamala Marketing Point, 2nd Floor, Opp. Guwahati Commerce College, Guwahati - 781003, Assam Email: info@flamingotravels.com
+Website: www.flamingotravels.com
+Contact No: +91-361-2454669<br>
+
+<b>Network Travels</b><br>
+Mr. Hemanta Das 17-Paltan Bazar, G.S. Road, 
+Guwahati-781008, Assam, 
+Email: networkgroup@satyam.net.in
+Website: www.networktravelindia.com
+Contact No: +91-361-2605335
++91-99540-55553<br>
+          
+        </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 well  tp text-center op">
+            	
+<b>Jungle Travels India</b><br>
+Inbound Services 3B, Dirang Arcade,
+G.N.B. Road
+Guwahati-781008, Assam, 
+Email: info@jungletravels.in
+Website: www.jungletravelsindia.com
+www.assambengalnavigation.com Contact No: +91 361 2667871/72/73
+<br>
+<b>Shubhyatra</b><br>
+Mr. Sachin Jain Sansun Plaza, 1st Floor,
+Near Car Ghar,
+Ganeshguri, G. S. Road, Guwahati-781005, Assam 
+Email: subhyatra40@yahoo.in
+Website: 
+Contact No: +91-361-2343830
+<br>
+<b>Sarothi Tourism</b><br>
+Mr. Utpal Saikia 
+62, Jogen Baruah Lane
+Nabagraha Road, Silpukhuri 
+Guwahati - 781 003, Assam, India. 
+Mobile - +91-94350-40452, +91-99540-40452
+Office - +91-361-2664972, +91-97061-94209
+Email: sarothitourism@gmail.com
+Website: www.sarothitourism.com<br>
+          
+        </div>
+        </div>
+	</div>
+</div>
+				
+        
+        	    
+
+        <!--the footer-->
+        
+   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer" id="main_f">
+<div class="container text-center">
+    <hr>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-4">
+	  <h3>Contact Us</h3>
+        <ul class="nav nav-pills nav-stacked">
+		  <li><a href="#"><i class="fa fa-envelope fa-2x"></i>  assamtourism@gov.in</a></li>
+          <li><a href="#"><i class="fa fa-phone fa-2x"></i> 9037624351,8904321621</a></li>
+          <li><a href="#"><i class="fa fa-map-marker fa-2x"></i> Guwahati,Assam-781029,India</a></li>
+		  
+        </ul>
+      </div>
+      
+      <div class="col-md-4">
+        <ul class="nav nav-pills nav-stacked">
+		<h3>About Assam Tourism</h3>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">About Assam</a></li>
+		  <li><a href="#">Facilities</a></li>
+		  
+        </ul>
+      </div>
+      <div class="col-md-4">
+		<ul class="nav nav-pills nav-stacked">
+		<h3>Follow Us</h3>
+		  <li class="facebook"><a href="http://facebook.com"><i class="fa fa-facebook fa-2x"></i> Facebook</a></li>
+		  <li class="twitter"><a href="http://twitter.com"><i class="fa fa-twitter fa-2x"></i> Twitter</a></li>
+		  <li class="behance"><a href="https://www.instagram.com"><i class="fa fa-instagram fa-2x"></i> Instagram</a></li>
+		</ul>
+      </div>  
+    </div>
+  </div>
+  <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="#">&copy 2015 Assam Tourism</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+    
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script>
+         $(function() {
+
+    $('#login-form-link').click(function(e) {
+		$("#login-form").delay(100).fadeIn(100);
+ 		$("#register-form").fadeOut(100);
+		$('#register-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+	});
+	$('#register-form-link').click(function(e) {
+		$("#register-form").delay(100).fadeIn(100);
+ 		$("#login-form").fadeOut(100);
+		$('#login-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+	});
+
+});
+	</script>
+
+</body>
+
+</html>

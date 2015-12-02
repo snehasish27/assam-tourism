@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+	<title>Assam Tourism</title>
+        <link rel="stylesheet" type="text/css" href="css/my_style.css">
+	<!--  -->
+
+	<style>
+        .notice a{color:#00838f}
+                
+  </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+        <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                    </button> <a href="home.html" class="pull-left"><img class="nav-logo img-responsive" src="image/logo.png" width="120px" height="100px"></a>
+	</div>
+        
+     <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <li><a href="home.html">Home</a></li>
+        <li><a href="destination.html">Destination</a></li>
+        <li class="active"><a href="#"><b>Accomodation</b></a></li>
+        <li><a href="touroperators.html">Tour operators</a></li>
+      </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span></span><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Login/SignUp</button></a></li>
+      </ul>
+    </div>
+        </div>
+    </nav>
+           <!-- login -->
+    
+    <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="container">
+    	<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-login">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-6">
+								<a href="#" class="active" id="login-form-link">Login</a>
+							</div>
+							<div class="col-xs-6">
+								<a href="#" id="register-form-link">Register</a>
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12">
+								<form id="login-form" action="login.php" method="post" role="form" style="display: block;" onsubmit="return validateForm()" name="loginform">
+									<div class="form-group">
+										<input type="text" name="username" id="username" required tabindex="1" class="form-control" placeholder="Username" value="">
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" required tabindex="2" class="form-control" placeholder="Password">
+									</div>
+									<div class="form-group text-center">
+										<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+										<label for="remember"> Remember Me</label>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+											</div>
+										</div>
+									</div>
+									
+								</form>
+								<form id="register-form" action="reg.php" method="post" role="form" style="display: none;" name="reg">
+                                    <div class="form-group">
+										<input type="text" name="name" id="name" required tabindex="1" class="form-control" placeholder="name" value="">
+									</div>
+									<div class="form-group">
+										<input type="text" name="username" id="username" required  tabindex="1" class="form-control" placeholder="Username" value="">
+									</div>
+									<div class="form-group">
+										<input type="email" name="email" id="email" required  tabindex="1" class="form-control" placeholder="Email Address" value="">
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" required  tabindex="2" class="form-control" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<input type="password" name="confirm-password" required id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+    
+    <!--End login-->
+    <div id=data><br></div>
+   
+   
+    <div id=data><br></div>
+    
+
+    <!-- THe content-->
+    <div class="well" id="data">
+    <div class="container back1">
+    
+	<!-- /PRICE ITEM -->
+        
+					
+				
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 stars ">
+				
+					<!-- PRICE ITEM -->
+					<div class="panel price panel-first shadow2">
+						<div class="panel-heading arrow_box text-center tex2" id="heading">
+                            <h3><i class="fa fa-bed fa-2x" > HOTTELS Of ASSAM</i></h3>
+                        
+						</div>
+            </div>
+<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" >
+                            <div class="circle" style="background-image: 
+                                url('image/gvtldg.jpg')">
+                            </div>
+                            <p style="font-size: 20px; font-weight: bold; color: #00838f; text-align: center;">GOVT.LODGES</p>
+                            <p style="font-size: 14px; text-align: center;">	
+
+                                <b>Guwahati</b><br>
+Prashaanti Tourist Lodge
+Station Road
+Guwahati, Kamrup (Metro)
+Phone: 0361-2544475<br>
+              <b>Kamakhya</b><br>
+Prashaanti Tourist Lodge
+Kamakhya
+Guwahati, Kamrup (Metro)
+Phone: +91-9435042063<br>
+              <b>Navagraha</b><br>
+Prashaanti Yatri Niwas and Restaurant
+Navagraha
+Guwahati, Kamrup (Metro)
+Phone:+91-94640 83579<br>
+                                <b></b>
+    </p>
+                        </div>
+						<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                            <div class="circle" style="background-image: 
+                                url('image/hotel.jpg')">
+                            </div>
+                            <p style="font-size: 20px; font-weight: bold; color: #00838f; text-align: center;">HOTELS</p>
+                            <p style="font-size: 14px; text-align: center;">Most urban centres and tourist destinations in Assam offer a range of hotels from budget to luxury in addition to resorts, home stays, lodges and guest houses. Most have air conditioning and a clean ambience and are quite reasonably priced.</p>
+                            <p>
+                                	
+<b>In The Town Of
+                                </b>Barpeta,Baksa,Bongaigaon,Cachar,Chirang,<br>Darrang,Dhemaji,Dhubri,Dibrugarh <br><b></b>
+                            </p>
+                        </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                            <div class="circle" style="background-image: 
+                                url('image/jungle.jpg')">
+                            </div>
+                            <p style="font-size: 20px; font-weight: bold; color: #00838f; text-align: center;">JUNGLE STAY</p>
+                                                        
+                <p style="font-size: 14px; text-align: center;">	
+
+                                <b> Kaziranga National Park</b><br>
+Director, Kaziranga National Park
+Bokakhat
+Ph: +91-3776-268095
+Mail: unicornis@sancharnet.in<br>
+              <b>	
+Kaziranga National Park -Resorts & Hotels</b><br>
+United-21 Grassland
+Ph: +91-8811003986
+-22-61841444
+Mail:cst@panoramicworld.biz<br>
+              <b>Manas National Park</b><br>
+Manas Maozigendri Eco-tourism Society
+Kamardwisa,
+Ph: +91-9864034614
+email:xtreme.ne@gmail.com<br>
+                                <b></b>
+    </p>
+                        </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                            <div class="circle" style="background-image: 
+                                url('image/teabung.jpg')">
+                            </div>
+                <p style="font-size: 20px; font-weight: bold; color: #00838f; text-align: center;">TEA BUNGLOW</p>
+                                                                                    <p style="font-size: 14px; text-align: center;">	
+
+                                <b> 	
+JORHAT</b><br>
+Heritage North East, Indu Bhawan, MG Road
+Jorhat – 785 001, Assam 
+Ph: +91-9706771578/ 8471949841
+9435514177/ 9830428462/ 9830622243
+Email: sailapratim@kazirangagolfresort.com,
+uttara@barooahs.com, sourav@barooahs.com, heritagenortheast@gmail.com
+Website:www.heritagetourismnortheast.com<br>
+              <b>	
+DIBRUGARH</b><br>
+Purvi Discovery (P) Ltd.
+Jalannagar, Dibrugarh 786 005
+Ph: +91 373-2301120/2300035, +91 33-22650188 / 89
+Fax : +91 373-230194
+Email: purvidiscovery@gmail.com, purvidiscovery@vsnl.net
+Website: purvidiscovery.com/purviweb<br>
+              
+                                <b></b>
+    </p>
+                        </div>
+					</div>
+        
+					<!-- /PRICE ITEM -->
+					</div>
+    </div>
+					
+				
+        
+        	    
+
+        
+        
+   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer" id="main_f">
+<div class="container text-center">
+    <hr>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-4">
+	  <h3>Contact Us</h3>
+        <ul class="nav nav-pills nav-stacked">
+		  <li><a href="#"><i class="fa fa-envelope fa-2x"></i>  assamtourism@gov.in</a></li>
+          <li><a href="#"><i class="fa fa-phone fa-2x"></i> 9037624351,8904321621</a></li>
+          <li><a href="#"><i class="fa fa-map-marker fa-2x"></i> Guwahati,Assam-781029,India</a></li>
+		  
+        </ul>
+      </div>
+      
+      <div class="col-md-4">
+        <ul class="nav nav-pills nav-stacked">
+		<h3>About Assam Tourism</h3>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">About Assam</a></li>
+		  <li><a href="#">Facilities</a></li>
+		  
+        </ul>
+      </div>
+      <div class="col-md-4">
+		<ul class="nav nav-pills nav-stacked">
+		<h3>Follow Us</h3>
+		  <li class="facebook"><a href="http://facebook.com"><i class="fa fa-facebook fa-2x"></i> Facebook</a></li>
+		  <li class="twitter"><a href="http://twitter.com"><i class="fa fa-twitter fa-2x"></i> Twitter</a></li>
+		  <li class="behance"><a href="https://www.instagram.com"><i class="fa fa-instagram fa-2x"></i>Instagram</a></li>
+		</ul>
+      </div>  
+    </div>
+  </div>
+  <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="#">&copy 2015 Assam Tourism</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+    
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	<script>
+         $(function() {
+
+    $('#login-form-link').click(function(e) {
+		$("#login-form").delay(100).fadeIn(100);
+ 		$("#register-form").fadeOut(100);
+		$('#register-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+	});
+	$('#register-form-link').click(function(e) {
+		$("#register-form").delay(100).fadeIn(100);
+ 		$("#login-form").fadeOut(100);
+		$('#login-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+	});
+
+});
+	</script>
+
+</body>
+
+</html>

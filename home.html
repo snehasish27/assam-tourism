@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+	<title>Assam Tourism</title>
+        <link rel="stylesheet" type="text/css" href="css/my_style.css">
+	<!--  -->
+
+	<style>
+        .notice a{color:#00838f}
+                
+  </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+        <div class="navbar-header">
+         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                    </button> <a href="home.html" class="pull-left"><img class="nav-logo img-responsive" src="image/logo.png" width="120px" height="100px"></a>
+	</div>
+        
+     <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+          <li class="active"><a href="#"><b>Home</b></a></li>
+        <li><a href="destination.html">Destination</a></li>
+        <li><a href="accomodation.html">Accomodation</a></li>
+        <li><a href="touroperators.html">Tour operators</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span></span><button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">Login/SignUp</button></a></li>
+      </ul>
+         
+    </div>
+        </div>
+    </nav>
+    
+    
+       <!-- login -->
+    
+    <div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="container">
+    	<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-login">
+					<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-6">
+								<a href="#" class="active" id="login-form-link">Login</a>
+							</div>
+							<div class="col-xs-6">
+								<a href="#" id="register-form-link">Register</a>
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12">
+								<form id="login-form" action="login.php" method="post" role="form" style="display: block;" onsubmit="return validateForm()" name="loginform">
+									<div class="form-group">
+										<input type="text" name="username" id="username" required tabindex="1" class="form-control" placeholder="Username" value="">
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" required tabindex="2" class="form-control" placeholder="Password">
+									</div>
+									<div class="form-group text-center">
+										<input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+										<label for="remember"> Remember Me</label>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+											</div>
+										</div>
+									</div>
+									
+								</form>
+								<form id="register-form" action="reg.php" method="post" role="form" style="display: none;" name="reg" onsubmit="validateForm">
+                                    <div class="form-group">
+										<input type="text" name="name" id="name" required tabindex="1" class="form-control" placeholder="name" value="">
+									</div>
+									<div class="form-group">
+										<input type="text" name="username" id="username" required  tabindex="1" class="form-control" placeholder="Username" value="">
+									</div>
+									<div class="form-group">
+										<input type="email" name="email" id="email" required  tabindex="1" class="form-control" placeholder="Email Address" value="">
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" id="password" required  tabindex="2" class="form-control" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<input type="password" name="confirm-password" required id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+    
+    <!--End login-->
+    
+    <!-- THe sliding window+nav Bar-->
+    <div class="container-fluid">
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- THe sliding window-->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+         <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="image/img1.jpg" width="100%" height="400px"alt="Image">
+        <div class="carousel-caption">
+          <h2>LAB CLASSES</h2>
+          <p>Practise Makes Perfect. So we provide a hands on Experiance for all the students individually</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="image/img2.jpg" width="100%" height="400px">
+        <div class="carousel-caption">
+            <h2>Regular Classroom</h2>
+          <p>the Knowledge Temple where the greater minds creates and nurish even greater ones</p>
+        </div>      
+      </div>
+        <div class="item">
+        <img src="image/img3.jpg" width="100%" height="400px">
+        <div class="carousel-caption">
+            <h2>Regular Classroom</h2>
+          <p>the Knowledge Temple where the greater minds creates and nurish even greater ones</p>
+        </div>      
+      </div>
+        <div class="item">
+        <img src="image/img4.jpg" width="100%" height="400px">
+        <div class="carousel-caption">
+            <h2>Regular Classroom</h2>
+          <p>the Knowledge Temple where the greater minds creates and nurish even greater ones</p>
+        </div>      
+      </div>
+        <div class="item">
+        <img src="image/img5.jpg" width="100%" height="400px">
+        <div class="carousel-caption">
+            <h2>Regular Classroom</h2>
+          <p>the Knowledge Temple where the greater minds creates and nurish even greater ones</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+    </div>
+                
+        </div>
+        
+
+    </div>
+    <div id=data><br></div>
+ 
+    
+    
+
+    <!-- THe content-->
+    <div class="container-fluid why" id=data>
+    
+    <div class="row" >
+     			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+				
+					<!-- Features-->
+					<div class="panel price panel-first shadow">
+						<div class="panel-heading  text-center" id="heading">
+						<h3>Why Assam ?</h3>
+                            
+						</div>
+                    </div>
+                    </div>
+                        <!--bEGINING OF wHY us-->
+                        
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center aa1">
+          
+            
+                <div class="aa">
+                    <p style="font-size: 20px; text-align: center;">	
+Occupying 2.39% of India’s landmass, Assam is the most vibrant of eight states comprising the Northeast. Bounded by these states, West Bengal, Bhutan and Bangladesh, its topographical asymmetry is underscored by the Barail hill range sandwiched between two valleys – Brahmaputra and Barak – named after the dominant rivers.
+                        Assam is synonymous with breathtaking natural beauty, teeming wildlife, immaculate tea gardens and warm, beautiful people. It’s strategic location in the northeast of India, and it’s accessibility from the rest of the country makes it the gateway to the northeastern states.</p>
+                </div>
+              
+                        </div>                    
+
+                          
+                      
+                <!--=========== END WHY US SECTION ================-->		
+                    </div>
+					<!-- /PRICE ITEM -->	
+					
+				
+  
+					<!-- /PRICE ITEM -->
+					</div>
+					
+				
+        
+        	    
+
+        
+        
+   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer" id="main_f">
+<div class="container text-center">
+    <hr>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-md-4">
+	  <h3>Contact Us</h3>
+        <ul class="nav nav-pills nav-stacked">
+		  <li><a href="#"><i class="fa fa-envelope fa-2x"></i>  assamtourism@gov.in</a></li>
+          <li><a href="#"><i class="fa fa-phone fa-2x"></i> 9037624351,8904321621</a></li>
+          <li><a href="#"><i class="fa fa-map-marker fa-2x"></i> Guwahati,Assam-781029,India</a></li>
+		  
+        </ul>
+      </div>
+      
+      <div class="col-md-4">
+        <ul class="nav nav-pills nav-stacked">
+		<h3>About Assam Tourism</h3>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">About Assam</a></li>
+		  <li><a href="#">Facilities</a></li>
+		  
+        </ul>
+      </div>
+      <div class="col-md-4">
+		<ul class="nav nav-pills nav-stacked">
+		<h3>Follow Us</h3>
+		  <li class="facebook"><a href="http://facebook.com"><i class="fa fa-facebook fa-2x"></i> Facebook</a></li>
+		  <li class="twitter"><a href="http://twitter.com"><i class="fa fa-twitter fa-2x"></i> Twitter</a></li>
+		  <li class="behance"><a href="https://www.instagram.com"><i class="fa fa-instagram fa-2x"></i> Instagram</a></li>
+		</ul>
+      </div>  
+    </div>
+  </div>
+  <hr>
+    <div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-pills nav-justified">
+                <li><a href="#">&copy 2015 Assam Tourism</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+    
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+	<script>
+        $(function() {
+
+    $('#login-form-link').click(function(e) {
+		$("#login-form").delay(100).fadeIn(100);
+ 		$("#register-form").fadeOut(100);
+		$('#register-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+	});
+	$('#register-form-link').click(function(e) {
+		$("#register-form").delay(100).fadeIn(100);
+ 		$("#login-form").fadeOut(100);
+		$('#login-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+	});
+
+});
+        function validateForm() {
+    var x = document.forms["register-form"]["password"].value;
+            var y = document.forms["register-form"]["confirm-password"].value;
+            console.log(x);
+            console.log(y);
+    if (x != y) {
+        alert("Passwords doesn't match please retype");
+        return false;
+    }
+}
+	</script>
+    
+    <!------php------>
+    <!--endof php---->
+    
+    
+
+</body>
+
+</html>
