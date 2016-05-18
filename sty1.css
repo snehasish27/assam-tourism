@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+category,title,price{
+    box-sizing: border-box;
+    width: 33.33%;
+    float: left;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+cd{
+    display: inline-block;
+    width: 100%;
+    float:left;
+    background-color: blanchedalmond;
+}
+cd:first-child{
+    font-weight: bold;
+}
+
+shop{
+    display:block;
+    width:100%;
+
+}
